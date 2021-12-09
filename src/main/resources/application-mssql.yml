@@ -1,0 +1,15 @@
+spring:
+  r2dbc:
+    db:
+      host: localhost
+      port: 1433
+      username: sa
+      secret: sqldeploy
+      name: coffeeshop
+      connectionTimeoutInSec: 3
+
+logging:
+  level:
+    io.r2dbc.mssql: ERROR
+    io.r2dbc.mssql.QUERY: DEBUG
+    io.r2dbc.mssql.client: INFO
